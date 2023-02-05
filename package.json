@@ -1,0 +1,23 @@
+{
+  "name": "@webaverse-studios/utils",
+  "version": "0.1.0",
+  "description": "General quality-of-life utilities for modern web development",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint .",
+    "setup": "husky install",
+    "prepublish": "yarn lint && yarn test",
+    "test": "ospec"
+  },
+  "devDependencies": {
+    "eslint": "^8.33.0",
+    "eslint-plugin-jsdoc": "^39.7.5",
+    "eslint-plugin-promise": "^6.1.1",
+    "husky": "^8.0.3",
+    "ospec": "^4.1.7"
+  },
+  "dependencies": {
+    "@webaverse-studios/eslint-config": "^1.0.0"
+  }
+}
